@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* height: 2000px; */
+    background-color: #000000f2;
+}
+
+
+.text-danger{
+    background-color: rgba(255,0,0,0.1);
+    margin-top: 5px;
+    display: none;
+    text-align: center;
+}
+
+/* ========== global ============ */
+i{
+    cursor: pointer;
+}
+/* ============ start nav-bar =========== */
+.hidden-nav{
+    width: 200px;
+}
+.sideBar{
+    z-index: 99999;
+}
+.links ul li{
+    margin-bottom: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.links ul li a:hover{
+    color: #ff655c;
+}
+
+
+.nav-foot .icon i{
+    margin-left: 7px;
+    font-size: 14px;
+}
+.nav-foot .icon p{
+    font-weight: 300;
+}
+.nav-foot .icon i:hover{
+    color: #ff655c;
+}
+
+.visible-nav img{
+    width: 30px
+}
+/* ============ end nav-bar =========== */
+
+
+
+
+/* ============ start movies =========== */
+.layer{
+    background: rgba(255, 255, 255, 0.7);
+    transition: 1s;
+}
+.img:hover .layer{
+    top:0% !important;
+}
+
+
+/* ============ end movies =========== */
+
+/* ============ start footer =========== */
+.form-group{
+    margin-bottom: 20px;
+}
+/* ============ end footer =========== */
