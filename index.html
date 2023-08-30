@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movies</title>
+</head>
+<body>
+
+    <section class="sideBar d-flex position-fixed vh-100 top-0">
+         <nav class="hidden-nav bg-dark d-flex justify-content-around flex-column">
+            <div class="links">
+                <ul class="list-unstyled p-3">
+                    <li><a href="#" id="movie/now_playing"> Now playing</a></li>
+                    <li><a href="#" id="movie/popular"> Popular</a></li>
+                    <li><a href="#" id="movie/top_rated"> Top Rated</a></li>
+                    <li><a href="#" id="trending/movie/week"> Trending</a></li>
+                    <li><a href="#" id="movie/upcoming"> Upcoming</a></li>
+                    <li><a href="#contact"> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-foot">
+                <div class="icon text-white ms-3 h-100">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-globe"></i>
+                    <p>Copyright Â© 2021 All Rights Reserved code By | Mohamed Elyamani.</p>
+                </div>
+            </div>
+        </nav> 
+        <nav class="visible-nav d-flex justify-content-around flex-column bg-white p-2">
+            <img src="img/logo.png" alt="logo">
+            <i class="fas fa-bars fa-2x"  id="toggleBtn"></i>
+            <div class="icon d-flex flex-column">
+                <i class="fas fa-globe mb-3"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+
+        </nav>
+    </section>
+    
+    
+    <section class="search my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="get movie by word" onkeyup="search(this.value)" class="form-control border-0 border-bottom bg-transparent text-white">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Search..." onkeyup="search(this.value)" class="form-control border-0 border-bottom bg-transparent text-white">
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+     <section class="movies"> 
+        <div class="container">
+            <div class="row" id='rowData'>
+
+            </div>
+        </div>
+    </section> 
+
+
+    <footer class="my-5" id="contact">
+        
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Name" class="form-control border-0 border-bottom bg-transparent text-white" id="nameInput">
+                        <div id="nameError" class="text-danger">Name must start with capital letter and 3 - 8 characters</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Email" class="form-control border-0 border-bottom bg-transparent text-white" id="emailInput">
+                        <div id="emailError" class="text-danger">use valid email</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="number" placeholder="Enter phone" class="form-control border-0 border-bottom bg-transparent text-white"  id="phoneInput">
+                        <div id="phoneError" class="text-danger">use valid phone</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter age" class="form-control border-0 border-bottom bg-transparent text-white"  id="ageInput">
+                        <div id="ageError" class="text-danger">age must between 10 to 80</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="password" placeholder="Enter password" class="form-control border-0 border-bottom bg-transparent text-white"  id="passInput">
+                        <div id="passError" class="text-danger">at least 1 capital and 1 small letter</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="password" placeholder="confirm password" class="form-control border-0 border-bottom bg-transparent text-white"  id="passConfirmInput">
+                        <div id="confirmPasswordError" class="text-danger">Not match</div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="submitBtn">Submit</button>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myJS.js"></script>
+</body>
+</html>
